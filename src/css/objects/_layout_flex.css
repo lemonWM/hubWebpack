@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body .dnd-section {
+    /* padding: var(--dnd-mt) var(--container-padding) var(--dnd-mb);
+    @media (max-width: 767px) {
+        padding-top: 80px;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        padding-bottom: 80px;
+    }
+    */
+}
+@media (min-width: 768px) {
+    .row-fluid {
+        @apply flex;
+        gap: var(--dnd-gap);
+    }
+    .row-fluid .span12 {
+        @apply w-full;
+    }
+
+    .row-fluid .span11 {
+        @apply w-11/12;
+    }
+
+    .row-fluid .span10 {
+        @apply w-10/12;
+    }
+
+    .row-fluid .span9 {
+        @apply w-9/12;
+    }
+
+    .row-fluid .span8 {
+        @apply w-8/12;
+    }
+
+    .row-fluid .span7 {
+        @apply w-7/12;
+    }
+
+    .row-fluid .span6 {
+        @apply w-1/2;
+    }
+
+    .row-fluid .span5 {
+        @apply w-5/12;
+    }
+
+    .row-fluid .span4 {
+        @apply w-4/12;
+    }
+
+    .row-fluid .span3 {
+        @apply w-3/12;
+    }
+
+    .row-fluid .span2 {
+        @apply w-2/12;
+    }
+
+    .row-fluid .span1 {
+        @apply w-1/12;
+    }
+}
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Visibilty classes */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* Responsive visibilty classes */
+
+.visible-phone {
+    display: none !important;
+}
+
+.visible-tablet {
+    display: none !important;
+}
+
+.hidden-desktop {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .visible-phone {
+        display: inherit !important;
+    }
+
+    .hidden-phone {
+        display: none !important;
+    }
+
+    .hidden-desktop {
+        display: inherit !important;
+    }
+
+    .visible-desktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1139px) {
+    .visible-tablet {
+        display: inherit !important;
+    }
+
+    .hidden-tablet {
+        display: none !important;
+    }
+
+    .hidden-desktop {
+        display: none !important;
+    }
+
+    .visible-desktop {
+        display: none !important;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}

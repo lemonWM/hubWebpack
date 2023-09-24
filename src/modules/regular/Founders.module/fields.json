@@ -1,0 +1,532 @@
+[
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "default": "<h4 style=\"text-align: center;\">Meet The Founders</h4>",
+                        "display_width": null,
+                        "id": "b005a8e8-8ade-08ed-7e4b-85c0ee83fc49",
+                        "label": "Title",
+                        "locked": false,
+                        "name": "title",
+                        "required": false,
+                        "type": "richtext"
+                    }
+                ],
+                "default": {
+                    "title": "<h4 style=\"text-align: center;\">Meet The Founders</h4>"
+                },
+                "display_width": null,
+                "expanded": false,
+                "id": "c814e774-2436-d29c-df94-b56a87e88c64",
+                "label": "Texts sections",
+                "locked": false,
+                "name": "texts_sections",
+                "required": false,
+                "tab": "CONTENT",
+                "type": "group"
+            },
+            {
+                "type": "group",
+                "id": "7ff66641-7675-371b-3bc4-e41cabc64a23",
+                "label": "Founders section",
+                "children": [
+                    {
+                        "type": "group",
+                        "id": "1df594a4-1b1f-2938-302f-cd0cf90ae0b6",
+                        "label": "Item",
+                        "children": [
+                            {
+                                "type": "choice",
+                                "id": "7de796a3-bb1b-dc0b-5efc-a905a463b19a",
+                                "display": "select",
+                                "choices": [
+                                    [
+                                        "flex-row",
+                                        "Text & Image"
+                                    ],
+                                    [
+                                        "flex-row-reverse",
+                                        "Image & Text"
+                                    ]
+                                ],
+                                "label": "Layout",
+                                "name": "layout",
+                                "default": "flex-row-reverse"
+                            },
+                            {
+                                "type": "text",
+                                "id": "22ed24fb-0c2d-8de8-c302-3c12bb19da2e",
+                                "validation_regex": "",
+                                "label": "Name",
+                                "name": "name_",
+                                "default": "Mohamed Farag"
+                            },
+                            {
+                                "type": "text",
+                                "id": "252de2b8-5250-0dc4-e151-02037c41cea4",
+                                "validation_regex": "",
+                                "label": "Position",
+                                "name": "position",
+                                "default": "Founder, CEO and CTO"
+                            },
+                            {
+                                "type": "link",
+                                "id": "f8405044-d353-ba00-b850-dc4490f93e1f",
+                                "default": {
+                                    "url": {
+                                        "content_id": null,
+                                        "href": "https://www.linkedin.com/in/mohmfarag",
+                                        "type": "EXTERNAL"
+                                    },
+                                    "open_in_new_tab": false,
+                                    "no_follow": false
+                                },
+                                "supported_types": [
+                                    "EXTERNAL",
+                                    "CONTENT",
+                                    "FILE",
+                                    "EMAIL_ADDRESS",
+                                    "BLOG",
+                                    "CALL_TO_ACTION",
+                                    "PHONE_NUMBER",
+                                    "WHATSAPP_NUMBER"
+                                ],
+                                "label": "Linkedin",
+                                "name": "linkedin"
+                            },
+                            {
+                                "type": "image",
+                                "id": "a822d2bf-6c80-41f2-f330-3e30dde4f03d",
+                                "default": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Images%20pages/Image-1.png",
+                                    "alt": "Image-1",
+                                    "loading": "lazy",
+                                    "width": 384,
+                                    "height": 320,
+                                    "max_width": 384,
+                                    "max_height": 320
+                                },
+                                "resizable": true,
+                                "responsive": true,
+                                "show_loading": false,
+                                "label": "Image",
+                                "name": "image_field"
+                            },
+                            {
+                                "type": "richtext",
+                                "id": "7832118c-190e-769e-4b24-16b2dbe080c7",
+                                "label": "Description",
+                                "name": "description",
+                                "default": "<p>Meet Mohamed Farag, a seasoned technologist, engineer, and entrepreneur with over 15 years of experience in the software industry. Throughout his career, he has successfully undertaken and delivered over 100 projects of varying scales across 12 different countries. With expertise as a developer, architect, and consultant, Mohamed has gained invaluable insights into the intricate workings of the industry. Farag worked in the Acquisitions &amp; Integrations team at ESW Capital, spearheading technical due diligence for over 30 software companies. Guiding the acquisition of a portfolio exceeding $150 million, where he evaluated and assessed the technological aspects of potential investments. Now, as the co-founder and CEO of SubsBase, Farag has set out to revolutionize the subscription management landscape in the MENA region. Recognizing a market gap and leveraging his extensive experience in building, maintaining, selling, and acquiring software and SaaS companies, he embarked on the mission to develop a world-class SaaS product with co-founder, Sherif Aziz.</p>"
+                            },
+                            {
+                                "type": "image",
+                                "id": "bc70c6da-d8b3-6af8-0469-cf6eba0dcf3f",
+                                "default": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+                                    "alt": "in",
+                                    "loading": "lazy",
+                                    "width": 20,
+                                    "height": 20,
+                                    "max_width": 20,
+                                    "max_height": 20
+                                },
+                                "resizable": true,
+                                "responsive": true,
+                                "show_loading": false,
+                                "label": "Icon",
+                                "name": "icon"
+                            },
+                            {
+                                "type": "image",
+                                "default": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover-3.svg",
+                                    "alt": "hover-3",
+                                    "loading": "lazy",
+                                    "width": 24,
+                                    "height": 24,
+                                    "max_width": 24,
+                                    "max_height": 24
+                                },
+                                "resizable": true,
+                                "responsive": true,
+                                "show_loading": false,
+                                "label": "Icon hover",
+                                "name": "icon_hover",
+                                "oldId": "bc70c6da-d8b3-6af8-0469-cf6eba0dcf3f",
+                                "id": "25750af6-0d7e-9eaa-762d-e8c0a954b555"
+                            }
+                        ],
+                        "name": "item",
+                        "default": [
+                            {
+                                "layout": "flex-row-reverse",
+                                "name_": "Mohamed Farag",
+                                "position": "Founder, CEO and CTO",
+                                "linkedin": {
+                                    "url": {
+                                        "content_id": null,
+                                        "href": "https://www.linkedin.com/in/mohmfarag",
+                                        "type": "EXTERNAL"
+                                    },
+                                    "open_in_new_tab": false,
+                                    "no_follow": false
+                                },
+                                "image_field": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Images%20pages/Image-1.png",
+                                    "alt": "Image-1",
+                                    "loading": "lazy",
+                                    "width": 384,
+                                    "height": 320,
+                                    "max_width": 384,
+                                    "max_height": 320
+                                },
+                                "description": "<p>Meet Mohamed Farag, a seasoned technologist, engineer, and entrepreneur with over 15 years of experience in the software industry. Throughout his career, he has successfully undertaken and delivered over 100 projects of varying scales across 12 different countries. With expertise as a developer, architect, and consultant, Mohamed has gained invaluable insights into the intricate workings of the industry. Farag worked in the Acquisitions &amp; Integrations team at ESW Capital, spearheading technical due diligence for over 30 software companies. Guiding the acquisition of a portfolio exceeding $150 million, where he evaluated and assessed the technological aspects of potential investments. Now, as the co-founder and CEO of SubsBase, Farag has set out to revolutionize the subscription management landscape in the MENA region. Recognizing a market gap and leveraging his extensive experience in building, maintaining, selling, and acquiring software and SaaS companies, he embarked on the mission to develop a world-class SaaS product with co-founder, Sherif Aziz.</p>",
+                                "icon": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+                                    "alt": "in",
+                                    "loading": "lazy",
+                                    "width": 20,
+                                    "height": 20,
+                                    "max_width": 20,
+                                    "max_height": 20
+                                },
+                                "icon_hover": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover-3.svg",
+                                    "alt": "hover-3",
+                                    "loading": "lazy",
+                                    "width": 24,
+                                    "height": 24,
+                                    "max_width": 24,
+                                    "max_height": 24
+                                }
+                            },
+                            {
+                                "layout": "flex-row-reverse",
+                                "name_": "Mohamed Farag",
+                                "position": "Founder, CEO and CTO",
+                                "linkedin": {
+                                    "url": {
+                                        "content_id": null,
+                                        "href": "https://www.linkedin.com/in/mohmfarag",
+                                        "type": "EXTERNAL"
+                                    },
+                                    "open_in_new_tab": false,
+                                    "no_follow": false
+                                },
+                                "image_field": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Images%20pages/Image-1.png",
+                                    "alt": "Image-1",
+                                    "loading": "lazy",
+                                    "width": 384,
+                                    "height": 320,
+                                    "max_width": 384,
+                                    "max_height": 320
+                                },
+                                "description": "<p>Meet Mohamed Farag, a seasoned technologist, engineer, and entrepreneur with over 15 years of experience in the software industry. Throughout his career, he has successfully undertaken and delivered over 100 projects of varying scales across 12 different countries. With expertise as a developer, architect, and consultant, Mohamed has gained invaluable insights into the intricate workings of the industry. Farag worked in the Acquisitions &amp; Integrations team at ESW Capital, spearheading technical due diligence for over 30 software companies. Guiding the acquisition of a portfolio exceeding $150 million, where he evaluated and assessed the technological aspects of potential investments. Now, as the co-founder and CEO of SubsBase, Farag has set out to revolutionize the subscription management landscape in the MENA region. Recognizing a market gap and leveraging his extensive experience in building, maintaining, selling, and acquiring software and SaaS companies, he embarked on the mission to develop a world-class SaaS product with co-founder, Sherif Aziz.</p>",
+                                "icon": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+                                    "alt": "in",
+                                    "loading": "lazy",
+                                    "width": 20,
+                                    "height": 20,
+                                    "max_width": 20,
+                                    "max_height": 20
+                                },
+                                "icon_hover": {
+                                    "size_type": "auto",
+                                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover-3.svg",
+                                    "alt": "hover-3",
+                                    "loading": "lazy",
+                                    "width": 24,
+                                    "height": 24,
+                                    "max_width": 24,
+                                    "max_height": 24
+                                }
+                            }
+                        ],
+                        "occurrence": {
+                            "sorting_label_field": "22ed24fb-0c2d-8de8-c302-3c12bb19da2e",
+                            "default": 2
+                        }
+                    }
+                ],
+                "name": "founders_section",
+                "default": {
+                    "item": [
+                        {
+                            "layout": "flex-row-reverse",
+                            "name_": "Mohamed Farag",
+                            "position": "Founder, CEO and CTO",
+                            "linkedin": {
+                                "url": {
+                                    "content_id": null,
+                                    "href": "https://www.linkedin.com/in/mohmfarag",
+                                    "type": "EXTERNAL"
+                                },
+                                "open_in_new_tab": false,
+                                "no_follow": false
+                            },
+                            "image_field": {
+                                "size_type": "auto",
+                                "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Images%20pages/Image-1.png",
+                                "alt": "Image-1",
+                                "loading": "lazy",
+                                "width": 384,
+                                "height": 320,
+                                "max_width": 384,
+                                "max_height": 320
+                            },
+                            "description": "<p>Meet Mohamed Farag, a seasoned technologist, engineer, and entrepreneur with over 15 years of experience in the software industry. Throughout his career, he has successfully undertaken and delivered over 100 projects of varying scales across 12 different countries. With expertise as a developer, architect, and consultant, Mohamed has gained invaluable insights into the intricate workings of the industry. Farag worked in the Acquisitions &amp; Integrations team at ESW Capital, spearheading technical due diligence for over 30 software companies. Guiding the acquisition of a portfolio exceeding $150 million, where he evaluated and assessed the technological aspects of potential investments. Now, as the co-founder and CEO of SubsBase, Farag has set out to revolutionize the subscription management landscape in the MENA region. Recognizing a market gap and leveraging his extensive experience in building, maintaining, selling, and acquiring software and SaaS companies, he embarked on the mission to develop a world-class SaaS product with co-founder, Sherif Aziz.</p>",
+                            "icon": {
+                                "size_type": "auto",
+                                "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+                                "alt": "in",
+                                "loading": "lazy",
+                                "width": 20,
+                                "height": 20,
+                                "max_width": 20,
+                                "max_height": 20
+                            },
+                            "icon_hover": {
+                                "size_type": "auto",
+                                "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover-3.svg",
+                                "alt": "hover-3",
+                                "loading": "lazy",
+                                "width": 24,
+                                "height": 24,
+                                "max_width": 24,
+                                "max_height": 24
+                            }
+                        },
+                        {
+                            "layout": "flex-row-reverse",
+                            "name_": "Mohamed Farag",
+                            "position": "Founder, CEO and CTO",
+                            "linkedin": {
+                                "url": {
+                                    "content_id": null,
+                                    "href": "https://www.linkedin.com/in/mohmfarag",
+                                    "type": "EXTERNAL"
+                                },
+                                "open_in_new_tab": false,
+                                "no_follow": false
+                            },
+                            "image_field": {
+                                "size_type": "auto",
+                                "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Images%20pages/Image-1.png",
+                                "alt": "Image-1",
+                                "loading": "lazy",
+                                "width": 384,
+                                "height": 320,
+                                "max_width": 384,
+                                "max_height": 320
+                            },
+                            "description": "<p>Meet Mohamed Farag, a seasoned technologist, engineer, and entrepreneur with over 15 years of experience in the software industry. Throughout his career, he has successfully undertaken and delivered over 100 projects of varying scales across 12 different countries. With expertise as a developer, architect, and consultant, Mohamed has gained invaluable insights into the intricate workings of the industry. Farag worked in the Acquisitions &amp; Integrations team at ESW Capital, spearheading technical due diligence for over 30 software companies. Guiding the acquisition of a portfolio exceeding $150 million, where he evaluated and assessed the technological aspects of potential investments. Now, as the co-founder and CEO of SubsBase, Farag has set out to revolutionize the subscription management landscape in the MENA region. Recognizing a market gap and leveraging his extensive experience in building, maintaining, selling, and acquiring software and SaaS companies, he embarked on the mission to develop a world-class SaaS product with co-founder, Sherif Aziz.</p>",
+                            "icon": {
+                                "size_type": "auto",
+                                "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+                                "alt": "in",
+                                "loading": "lazy",
+                                "width": 20,
+                                "height": 20,
+                                "max_width": 20,
+                                "max_height": 20
+                            },
+                            "icon_hover": {
+                                "size_type": "auto",
+                                "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover-3.svg",
+                                "alt": "hover-3",
+                                "loading": "lazy",
+                                "width": 24,
+                                "height": 24,
+                                "max_width": 24,
+                                "max_height": 24
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "default": {
+            "texts_sections": {
+                "title": "<h4 style=\"text-align: center;\">Meet The Founders</h4>"
+            },
+            "founders_section": {
+                "item": [
+                    {
+                        "layout": "flex-row-reverse",
+                        "name_": "Mohamed Farag",
+                        "position": "Founder, CEO and CTO",
+                        "linkedin": {
+                            "url": {
+                                "content_id": null,
+                                "href": "https://www.linkedin.com/in/mohmfarag",
+                                "type": "EXTERNAL"
+                            },
+                            "open_in_new_tab": false,
+                            "no_follow": false
+                        },
+                        "image_field": {
+                            "size_type": "auto",
+                            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Images%20pages/Image-1.png",
+                            "alt": "Image-1",
+                            "loading": "lazy",
+                            "width": 384,
+                            "height": 320,
+                            "max_width": 384,
+                            "max_height": 320
+                        },
+                        "description": "<p>Meet Mohamed Farag, a seasoned technologist, engineer, and entrepreneur with over 15 years of experience in the software industry. Throughout his career, he has successfully undertaken and delivered over 100 projects of varying scales across 12 different countries. With expertise as a developer, architect, and consultant, Mohamed has gained invaluable insights into the intricate workings of the industry. Farag worked in the Acquisitions &amp; Integrations team at ESW Capital, spearheading technical due diligence for over 30 software companies. Guiding the acquisition of a portfolio exceeding $150 million, where he evaluated and assessed the technological aspects of potential investments. Now, as the co-founder and CEO of SubsBase, Farag has set out to revolutionize the subscription management landscape in the MENA region. Recognizing a market gap and leveraging his extensive experience in building, maintaining, selling, and acquiring software and SaaS companies, he embarked on the mission to develop a world-class SaaS product with co-founder, Sherif Aziz.</p>",
+                        "icon": {
+                            "size_type": "auto",
+                            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+                            "alt": "in",
+                            "loading": "lazy",
+                            "width": 20,
+                            "height": 20,
+                            "max_width": 20,
+                            "max_height": 20
+                        },
+                        "icon_hover": {
+                            "size_type": "auto",
+                            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover-3.svg",
+                            "alt": "hover-3",
+                            "loading": "lazy",
+                            "width": 24,
+                            "height": 24,
+                            "max_width": 24,
+                            "max_height": 24
+                        }
+                    },
+                    {
+                        "layout": "flex-row-reverse",
+                        "name_": "Mohamed Farag",
+                        "position": "Founder, CEO and CTO",
+                        "linkedin": {
+                            "url": {
+                                "content_id": null,
+                                "href": "https://www.linkedin.com/in/mohmfarag",
+                                "type": "EXTERNAL"
+                            },
+                            "open_in_new_tab": false,
+                            "no_follow": false
+                        },
+                        "image_field": {
+                            "size_type": "auto",
+                            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Images%20pages/Image-1.png",
+                            "alt": "Image-1",
+                            "loading": "lazy",
+                            "width": 384,
+                            "height": 320,
+                            "max_width": 384,
+                            "max_height": 320
+                        },
+                        "description": "<p>Meet Mohamed Farag, a seasoned technologist, engineer, and entrepreneur with over 15 years of experience in the software industry. Throughout his career, he has successfully undertaken and delivered over 100 projects of varying scales across 12 different countries. With expertise as a developer, architect, and consultant, Mohamed has gained invaluable insights into the intricate workings of the industry. Farag worked in the Acquisitions &amp; Integrations team at ESW Capital, spearheading technical due diligence for over 30 software companies. Guiding the acquisition of a portfolio exceeding $150 million, where he evaluated and assessed the technological aspects of potential investments. Now, as the co-founder and CEO of SubsBase, Farag has set out to revolutionize the subscription management landscape in the MENA region. Recognizing a market gap and leveraging his extensive experience in building, maintaining, selling, and acquiring software and SaaS companies, he embarked on the mission to develop a world-class SaaS product with co-founder, Sherif Aziz.</p>",
+                        "icon": {
+                            "size_type": "auto",
+                            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+                            "alt": "in",
+                            "loading": "lazy",
+                            "width": 20,
+                            "height": 20,
+                            "max_width": 20,
+                            "max_height": 20
+                        },
+                        "icon_hover": {
+                            "size_type": "auto",
+                            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover-3.svg",
+                            "alt": "hover-3",
+                            "loading": "lazy",
+                            "width": 24,
+                            "height": 24,
+                            "max_width": 24,
+                            "max_height": 24
+                        }
+                    }
+                ]
+            }
+        },
+        "display_width": null,
+        "expanded": false,
+        "id": "bc21ca45-470e-dea9-86c8-68144cd1d14c",
+        "label": "Content settings",
+        "locked": false,
+        "name": "content_settings",
+        "required": false,
+        "tab": "CONTENT",
+        "type": "group"
+    },
+    {
+        "children": [
+            {
+                "display": "slider",
+                "display_width": null,
+                "id": "fd5d0787-24b1-e4ed-6edc-8c678556394f",
+                "label": "Margin top desktop",
+                "locked": false,
+                "max": 200,
+                "name": "margin_top_desktop",
+                "required": false,
+                "step": 1,
+                "type": "number"
+            },
+            {
+                "display": "slider",
+                "display_width": null,
+                "id": "d6e76fa2-27cb-530b-3502-c2cde4d77260",
+                "label": "Margin top mobile",
+                "locked": false,
+                "max": 200,
+                "name": "margin_top_mobile",
+                "required": false,
+                "step": 1,
+                "type": "number"
+            },
+            {
+                "display": "slider",
+                "display_width": null,
+                "id": "11a81324-c469-24c7-4d48-f76421ccd764",
+                "label": "Margin bottom desktop",
+                "locked": false,
+                "max": 200,
+                "name": "margin_bottom_desktop",
+                "required": false,
+                "step": 1,
+                "type": "number"
+            },
+            {
+                "display": "slider",
+                "display_width": null,
+                "id": "094f299d-1879-07a7-af0c-bcaf8c89701c",
+                "label": "Margin bottom mobile",
+                "locked": false,
+                "max": 200,
+                "name": "margin_bottom_mobile",
+                "required": false,
+                "step": 1,
+                "type": "number"
+            }
+        ],
+        "default": {},
+        "display_width": null,
+        "expanded": false,
+        "id": "1a33782f-0c99-a696-3bc3-c4bbc9367d90",
+        "label": "Module settings",
+        "locked": false,
+        "name": "module_settings",
+        "required": false,
+        "tab": "CONTENT",
+        "type": "group"
+    }
+]

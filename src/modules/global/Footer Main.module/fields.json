@@ -1,0 +1,1702 @@
+[
+    {
+     "children": [
+      {
+       "children": [
+        {
+         "default": {
+          "override_inherited_src": true,
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/primary.svg",
+          "alt": "primary",
+          "suppress_company_name": true,
+          "width": 181,
+          "height": 32
+         },
+         "display_width": null,
+         "id": "6990ddbd-2ec6-fdff-4ed0-42ac72b6fe9f",
+         "label": "Logo",
+         "locked": false,
+         "name": "logo_field",
+         "required": false,
+         "show_loading": false,
+         "type": "logo"
+        },
+        {
+         "default": "SubsBase simplifies subscription, recurring revenue, and billing management. It was founded in Egypt and serves companies across the MENA region, enabling them to set up and collect recurring payments in just a few clicks.",
+         "display_width": null,
+         "id": "e93b1ee7-b602-3461-a245-9b6ebb4c8ede",
+         "label": "Rich text",
+         "locked": false,
+         "name": "richtext_field",
+         "required": false,
+         "type": "richtext"
+        },
+        {
+         "default": [
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Subscription management",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Recurring payments",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Billing & invoicing",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Integration & localization",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Analytics & reporting",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          }
+         ],
+         "display_width": null,
+         "id": "4c4ecf6f-10b9-9d29-9b6e-c8f8599cff83",
+         "label": "Menu 1",
+         "locked": false,
+         "name": "menu_1",
+         "required": false,
+         "type": "simplemenu"
+        },
+        {
+         "default": [
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Homepage",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Features",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Solutions",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Demo",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Pricing",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          }
+         ],
+         "display_width": null,
+         "id": "4cb4a885-f9b9-8c54-266c-9d9be507396d",
+         "label": "Menu 2",
+         "locked": false,
+         "name": "menu_2",
+         "required": false,
+         "type": "simplemenu"
+        },
+        {
+         "default": [
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "About us",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Careers",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Documentation",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Contact us",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          }
+         ],
+         "display_width": null,
+         "id": "902325e4-2260-1437-fc5a-96864248a882",
+         "label": "Menu 3",
+         "locked": false,
+         "name": "menu_3",
+         "required": false,
+         "type": "simplemenu"
+        },
+        {
+         "default": [
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Partners",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Integrations",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Terms and  conditions ",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Privacy policy",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          },
+          {
+           "isPublished": false,
+           "pageLinkId": null,
+           "contentGroupId": null,
+           "pageLinkName": null,
+           "isDeleted": null,
+           "categoryId": null,
+           "subCategory": null,
+           "contentType": null,
+           "state": null,
+           "linkLabel": "Support",
+           "linkUrl": null,
+           "linkParams": null,
+           "linkTarget": null,
+           "type": "PAGE_LINK",
+           "children": []
+          }
+         ],
+         "display_width": null,
+         "id": "a6e5f7cc-68b5-793c-d0ef-2272aa361fde",
+         "label": "Menu 4",
+         "locked": false,
+         "name": "menu_4",
+         "required": false,
+         "type": "simplemenu"
+        }
+       ],
+       "default": {
+        "logo_field": {
+         "override_inherited_src": true,
+         "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/primary.svg",
+         "alt": "primary",
+         "suppress_company_name": true,
+         "width": 181,
+         "height": 32
+        },
+        "richtext_field": "SubsBase simplifies subscription, recurring revenue, and billing management. It was founded in Egypt and serves companies across the MENA region, enabling them to set up and collect recurring payments in just a few clicks.",
+        "menu_1": [
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Subscription management",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Recurring payments",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Billing & invoicing",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Integration & localization",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Analytics & reporting",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         }
+        ],
+        "menu_2": [
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Homepage",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Features",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Solutions",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Demo",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Pricing",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         }
+        ],
+        "menu_3": [
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "About us",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Careers",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Documentation",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Contact us",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         }
+        ],
+        "menu_4": [
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Partners",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Integrations",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Terms and  conditions ",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Privacy policy",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         },
+         {
+          "isPublished": false,
+          "pageLinkId": null,
+          "contentGroupId": null,
+          "pageLinkName": null,
+          "isDeleted": null,
+          "categoryId": null,
+          "subCategory": null,
+          "contentType": null,
+          "state": null,
+          "linkLabel": "Support",
+          "linkUrl": null,
+          "linkParams": null,
+          "linkTarget": null,
+          "type": "PAGE_LINK",
+          "children": []
+         }
+        ]
+       },
+       "display_width": null,
+       "expanded": false,
+       "id": "48e49fda-dcb2-326f-01b6-efd96a69bdeb",
+       "label": "Main section",
+       "locked": false,
+       "name": "main_section",
+       "required": false,
+       "tab": "CONTENT",
+       "type": "group"
+      },
+      {
+       "children": [
+        {
+         "allow_new_line": false,
+         "default": "© 2023 Subsbase. All rights reserved.",
+         "display_width": null,
+         "id": "9294cf0c-da33-2f64-7608-ee56698d5137",
+         "label": "Text",
+         "locked": false,
+         "name": "text_field",
+         "required": false,
+         "show_emoji_picker": false,
+         "type": "text",
+         "validation_regex": ""
+        },
+        {
+         "children": [
+          {
+           "default": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+            "alt": "default",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "display_width": null,
+           "id": "cb18e268-19f0-2e8d-8c98-385b47129c68",
+           "label": "Image",
+           "locked": false,
+           "name": "image_field",
+           "required": false,
+           "resizable": true,
+           "responsive": true,
+           "show_loading": false,
+           "type": "image"
+          },
+          {
+           "default": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+            "alt": "hover",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "display_width": null,
+           "label": "Image hover",
+           "locked": false,
+           "name": "image_hover",
+           "required": false,
+           "resizable": true,
+           "responsive": true,
+           "show_loading": false,
+           "type": "image",
+           "oldId": "cb18e268-19f0-2e8d-8c98-385b47129c68",
+           "id": "0b8acc66-c4c9-25c7-b98f-58875f319cec"
+          },
+          {
+           "default": {
+            "url": {
+             "content_id": null,
+             "type": "EXTERNAL",
+             "href": ""
+            },
+            "open_in_new_tab": false,
+            "no_follow": false
+           },
+           "display_width": null,
+           "id": "c328c149-f592-3419-ca3a-a952d5e2c720",
+           "label": "Link",
+           "locked": false,
+           "name": "link_field",
+           "required": false,
+           "show_advanced_rel_options": false,
+           "supported_types": [
+            "EXTERNAL",
+            "CONTENT",
+            "FILE",
+            "EMAIL_ADDRESS",
+            "BLOG",
+            "CALL_TO_ACTION",
+            "PHONE_NUMBER",
+            "WHATSAPP_NUMBER"
+           ],
+           "type": "link"
+          }
+         ],
+         "default": [
+          {
+           "image_field": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+            "alt": "default",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "image_hover": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+            "alt": "hover",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "link_field": {
+            "url": {
+             "content_id": null,
+             "type": "EXTERNAL",
+             "href": ""
+            },
+            "open_in_new_tab": false,
+            "no_follow": false
+           }
+          },
+          {
+           "image_field": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+            "alt": "default",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "image_hover": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+            "alt": "hover",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "link_field": {
+            "url": {
+             "content_id": null,
+             "type": "EXTERNAL",
+             "href": ""
+            },
+            "open_in_new_tab": false,
+            "no_follow": false
+           }
+          },
+          {
+           "image_field": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+            "alt": "default",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "image_hover": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+            "alt": "hover",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "link_field": {
+            "url": {
+             "content_id": null,
+             "type": "EXTERNAL",
+             "href": ""
+            },
+            "open_in_new_tab": false,
+            "no_follow": false
+           }
+          },
+          {
+           "image_field": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+            "alt": "default",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "image_hover": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+            "alt": "hover",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "link_field": {
+            "url": {
+             "content_id": null,
+             "type": "EXTERNAL",
+             "href": ""
+            },
+            "open_in_new_tab": false,
+            "no_follow": false
+           }
+          },
+          {
+           "image_field": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+            "alt": "default",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "image_hover": {
+            "size_type": "auto",
+            "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+            "alt": "hover",
+            "loading": "lazy",
+            "width": 24,
+            "height": 24,
+            "max_width": 24,
+            "max_height": 24
+           },
+           "link_field": {
+            "url": {
+             "content_id": null,
+             "type": "EXTERNAL",
+             "href": ""
+            },
+            "open_in_new_tab": false,
+            "no_follow": false
+           }
+          }
+         ],
+         "display_width": null,
+         "expanded": false,
+         "id": "d4e138e4-f6dd-dc3e-c671-8071b632f791",
+         "label": "Social item",
+         "locked": false,
+         "name": "social_item",
+         "occurrence": {
+          "default": 5
+         },
+         "required": false,
+         "tab": "CONTENT",
+         "type": "group"
+        }
+       ],
+       "default": {
+        "text_field": "© 2023 Subsbase. All rights reserved.",
+        "social_item": [
+         {
+          "image_field": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+           "alt": "default",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "image_hover": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+           "alt": "hover",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "link_field": {
+           "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+           },
+           "open_in_new_tab": false,
+           "no_follow": false
+          }
+         },
+         {
+          "image_field": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+           "alt": "default",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "image_hover": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+           "alt": "hover",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "link_field": {
+           "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+           },
+           "open_in_new_tab": false,
+           "no_follow": false
+          }
+         },
+         {
+          "image_field": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+           "alt": "default",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "image_hover": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+           "alt": "hover",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "link_field": {
+           "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+           },
+           "open_in_new_tab": false,
+           "no_follow": false
+          }
+         },
+         {
+          "image_field": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+           "alt": "default",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "image_hover": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+           "alt": "hover",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "link_field": {
+           "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+           },
+           "open_in_new_tab": false,
+           "no_follow": false
+          }
+         },
+         {
+          "image_field": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+           "alt": "default",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "image_hover": {
+           "size_type": "auto",
+           "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+           "alt": "hover",
+           "loading": "lazy",
+           "width": 24,
+           "height": 24,
+           "max_width": 24,
+           "max_height": 24
+          },
+          "link_field": {
+           "url": {
+            "content_id": null,
+            "type": "EXTERNAL",
+            "href": ""
+           },
+           "open_in_new_tab": false,
+           "no_follow": false
+          }
+         }
+        ]
+       },
+       "display_width": null,
+       "expanded": false,
+       "id": "61ccfc82-a8a7-35eb-b19f-b5ee801b3ee3",
+       "label": "Bar section",
+       "locked": false,
+       "name": "bar_section",
+       "required": false,
+       "tab": "CONTENT",
+       "type": "group"
+      }
+     ],
+     "default": {
+      "main_section": {
+       "logo_field": {
+        "override_inherited_src": true,
+        "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/primary.svg",
+        "alt": "primary",
+        "suppress_company_name": true,
+        "width": 181,
+        "height": 32
+       },
+       "richtext_field": "SubsBase simplifies subscription, recurring revenue, and billing management. It was founded in Egypt and serves companies across the MENA region, enabling them to set up and collect recurring payments in just a few clicks.",
+       "menu_1": [
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Subscription management",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Recurring payments",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Billing & invoicing",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Integration & localization",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Analytics & reporting",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        }
+       ],
+       "menu_2": [
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Homepage",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Features",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Solutions",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Demo",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Pricing",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        }
+       ],
+       "menu_3": [
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "About us",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Careers",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Documentation",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Contact us",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        }
+       ],
+       "menu_4": [
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Partners",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Integrations",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Terms and  conditions ",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Privacy policy",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        },
+        {
+         "isPublished": false,
+         "pageLinkId": null,
+         "contentGroupId": null,
+         "pageLinkName": null,
+         "isDeleted": null,
+         "categoryId": null,
+         "subCategory": null,
+         "contentType": null,
+         "state": null,
+         "linkLabel": "Support",
+         "linkUrl": null,
+         "linkParams": null,
+         "linkTarget": null,
+         "type": "PAGE_LINK",
+         "children": []
+        }
+       ]
+      },
+      "bar_section": {
+       "text_field": "© 2023 Subsbase. All rights reserved.",
+       "social_item": [
+        {
+         "image_field": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+          "alt": "default",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "image_hover": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+          "alt": "hover",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "link_field": {
+          "url": {
+           "content_id": null,
+           "type": "EXTERNAL",
+           "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+         }
+        },
+        {
+         "image_field": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+          "alt": "default",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "image_hover": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+          "alt": "hover",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "link_field": {
+          "url": {
+           "content_id": null,
+           "type": "EXTERNAL",
+           "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+         }
+        },
+        {
+         "image_field": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+          "alt": "default",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "image_hover": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+          "alt": "hover",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "link_field": {
+          "url": {
+           "content_id": null,
+           "type": "EXTERNAL",
+           "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+         }
+        },
+        {
+         "image_field": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+          "alt": "default",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "image_hover": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+          "alt": "hover",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "link_field": {
+          "url": {
+           "content_id": null,
+           "type": "EXTERNAL",
+           "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+         }
+        },
+        {
+         "image_field": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/default.svg",
+          "alt": "default",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "image_hover": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/hover.svg",
+          "alt": "hover",
+          "loading": "lazy",
+          "width": 24,
+          "height": 24,
+          "max_width": 24,
+          "max_height": 24
+         },
+         "link_field": {
+          "url": {
+           "content_id": null,
+           "type": "EXTERNAL",
+           "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+         }
+        }
+       ]
+      }
+     },
+     "display_width": null,
+     "expanded": false,
+     "id": "14a75eef-5bed-f0c7-97a5-71e0f580c5f7",
+     "label": "Content settings",
+     "locked": false,
+     "name": "content_settings",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ]

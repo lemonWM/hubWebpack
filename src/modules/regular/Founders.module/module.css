@@ -1,0 +1,128 @@
+.founders {
+
+    &__wrapper {
+        padding: 96px 0px;
+
+        @media (max-width: 992px) {
+            padding: 48px 0px;
+        }
+        
+        &--title {
+            padding-bottom: 64px;
+
+            h4 {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 44px;
+                letter-spacing: -0.02em !important;
+                margin-bottom: 0px;
+
+                @media (max-width: 992px) {
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+
+        &--items {
+            gap: 96px;
+
+            .single-item {
+                gap: 48px;
+
+                @media (max-width: 992px) {
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+                    gap: 24px;
+                }
+
+                &--text {
+                    max-width: 713px;
+                    padding-top: 12px;
+
+                    @media (max-width: 992px) {
+                        max-width: 100%;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: rgba(82, 77, 117, 1);
+                        margin-bottom: 0px;
+                    }
+                }
+
+                &--main {
+                    min-width: 384px;
+
+                    @media (max-width: 992px) {
+                        min-width: unset;
+                    }
+
+                    @media (max-width: 576px) {
+                        min-width: 100%;
+
+                        .image {
+
+                            img {
+                                min-width: 100%;
+                            }
+                        }
+                    }
+
+                    .name {
+
+                        span {
+                            display: block;
+                            margin-top: 24px;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 30px;
+                            letter-spacing: 0em;
+                        }
+                    }
+                    .position {
+
+                        span {
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 28px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: rgba(0, 90, 255, 1);
+                            display: block;
+                            margin-bottom: 4px;
+                        }
+                    }
+                    .social {
+
+                        a {
+                            display: flex;
+                            max-width: fit-content;
+
+                            &:hover {
+                                
+                                .icon {
+                                    display: none;
+                                }
+                                .icon-hover {
+                                    display: block;
+                                }
+                            }
+
+                            .icon {
+                                min-width: 24px !important;
+                            }
+                            .icon-hover {
+                                display: none;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

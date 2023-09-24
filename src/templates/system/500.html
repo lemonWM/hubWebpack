@@ -1,0 +1,30 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: 500 error 6M
+  screenshotPath: ../../images/template-previews/500.png
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Error 500 | Server error" %}
+
+{% block body %}
+  <section class="error-page error-page__500" data-error="500">
+    <div class="container">
+        <div class="wrapper">
+            <div class="text">
+                <h1>500</h1>
+                <h3>Ups.. Something went wrong</h3>
+                <p>Unexpected server error occurred.</p>
+                <span>
+                    <a href='https://subsbase.com' target='_self' class='cta_button button button--type-2'>Go back to homepage</a>
+                </span>
+            </div>
+            <div class="image">
+				<img src="https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Images%20pages/500.svg" alt="500">
+			</div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

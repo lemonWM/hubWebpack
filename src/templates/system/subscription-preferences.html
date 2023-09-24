@@ -1,0 +1,31 @@
+<!--
+  templateType: email_subscription_preferences_page
+  isAvailableForNewContent: true
+  label: Boilerplate - email subscription preferences
+  screenshotPath: ../../images/template-previews/subscription-preferences.png
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Subscription preferences" %}
+
+{% block body %}
+    <section class="systems-page subscription-preferences">
+
+        <div class="container">
+            <div class="main-wrapper">
+                <div class="image"></div>
+    
+                <div class="inner-content ">
+                    <div class="content">
+                        {% module "subscription_preferences" path="@hubspot/email_subscriptions"
+                            unsubscribe_single_text="",
+                            button_text="Update preferences"
+                        %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+{% endblock body %}

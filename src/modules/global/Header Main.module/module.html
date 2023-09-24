@@ -1,0 +1,44 @@
+{% require_css %}
+  <style>
+    {% scope_css %}
+
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}
+
+
+<section class="main-menu" id="{{ name }}">
+    <div class="main-menu__wrapper d-flex flex-row justify-between align-center">
+
+        <div class="main-menu__wrapper--logo">
+            <div class="logo">
+                {% set loadingAttr = module.content_settings.logo_field.loading != 'disabled' ? '{{ module.content_settings.logo_field.loading }}' : '' %}
+
+                {% logo
+                    override_inherited_src="{{ module.content_settings.logo_field.override_inherited_src }}"
+                    src="{{ module.content_settings.logo_field.src }}"
+                    alt="{{ module.content_settings.logo_field.alt }}"
+                    width="{{ module.content_settings.logo_field.width }}"
+                    height="{{ module.content_settings.logo_field.height }}"
+                    loading="{{ loadingAttr }}"
+                    suppress_company_name="{{ module.content_settings.logo_field.suppress_company_name }}"
+                %}
+            </div>
+        </div>
+        <div class="main-menu__wrapper--menu d-flex flex-row align-center init-load">
+            <div class="menu">
+                {% menu id="{{ module.content_settings.menu_field }}" %}
+            </div>
+            <div class="cta">
+                {% cta guid="{{ module.content_settings.cta_field }}" %}
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+{% require_js %}
+  <script>
+  </script>
+{% end_require_js %}

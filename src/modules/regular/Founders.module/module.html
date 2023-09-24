@@ -1,0 +1,101 @@
+{% require_css %}
+    <style>
+        {% scope_css %}
+            @media(min-width:992px){
+                .founders {
+                    padding-top: {{ module.module_settings.margin_top_desktop }}px;
+                    padding-bottom: {{ module.module_settings.margin_bottom_desktop }}px;
+                }
+            }
+            @media (max-width: 992px) {
+                .founders {
+                    padding-top: {{ module.module_settings.margin_top_mobile }}px;
+                    padding-bottom: {{ module.module_settings.margin_bottom_mobile }}px;
+                }
+            }
+        {% end_scope_css %}
+    </style>
+{% end_require_css %}
+
+<section class="founders" id="{{ name }}">
+    <div class="container">
+        <div class="founders__wrapper">
+            <div class="founders__wrapper--title">
+                {% inline_rich_text field="content_settings.texts_sections.title" value="{{ module.content_settings.texts_sections.title }}" %}
+            </div>
+            <div class="founders__wrapper--items d-flex flex-column">
+
+                {% for item in module.content_settings.founders_section.item %}
+
+                    <div class="single-item d-flex {{ item.layout }} justify-between">
+                        <div class="single-item--text">
+                            {% inline_rich_text field="description" value="{{ item.description }}" %}
+                        </div>
+                        <div class="single-item--main d-flex flex-column">
+                            <div class="image">
+                                {% if item.image_field.src %}
+                                    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                                    {% if item.image_field.size_type == 'auto' %}
+                                        {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                                    {% elif item.image_field.size_type == 'auto_custom_max' %}
+                                        {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                                    {% endif %}
+                                    {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                                    <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                                {% endif %}
+                            </div>
+                            <div class="name">
+                                <span>
+                                    {{ item.name_ }}
+                                </span>
+                            </div>
+                            <div class="position">
+                                <span>
+                                    {{ item.position }}
+                                </span>
+                            </div>
+                            <div class="social">
+                                {% set href = item.linkedin.url.href %}
+                                {% if item.linkedin.url.type is equalto "EMAIL_ADDRESS" %}
+                                    {% set href = "mailto:" + href %}
+                                {% endif %}
+                                <a href="{{ href }}"
+                                    {% if item.linkedin.open_in_new_tab %}target="_blank"{% endif %}
+                                    {% if item.linkedin.rel %}rel="{{ item.linkedin.rel }}"{% endif %}
+                                    >
+                                    {% if item.icon.src %}
+                                        {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+                                        {% if item.icon.size_type == 'auto' %}
+                                            {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}" style="max-width: 100%; height: auto;"' %}
+                                        {% elif item.icon.size_type == 'auto_custom_max' %}
+                                            {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                                        {% endif %}
+                                        {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+                                        <img class="icon" src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                                    {% endif %}
+                                    {% if item.icon_hover.src %}
+                                        {% set sizeAttrs = 'width="{{ item.icon_hover.width }}" height="{{ item.icon_hover.height }}"' %}
+                                        {% if item.icon_hover.size_type == 'auto' %}
+                                            {% set sizeAttrs = 'width="{{ item.icon_hover.width }}" height="{{ item.icon_hover.height }}" style="max-width: 100%; height: auto;"' %}
+                                        {% elif item.icon_hover.size_type == 'auto_custom_max' %}
+                                            {% set sizeAttrs = 'width="{{ item.icon_hover.max_width }}" height="{{ item.icon_hover.max_height }}" style="max-width: 100%; height: auto;"' %}
+                                        {% endif %}
+                                        {% set loadingAttr = item.icon_hover.loading != 'disabled' ? 'loading="{{ item.icon_hover.loading }}"' : '' %}
+                                        <img class="icon-hover" src="{{ item.icon_hover.src }}" alt="{{ item.icon_hover.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                                    {% endif %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>                    
+
+                {% endfor %} 
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% require_js %}
+    <script>
+    </script>
+{% end_require_js %}

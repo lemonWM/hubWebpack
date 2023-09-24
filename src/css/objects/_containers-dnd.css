@@ -1,0 +1,39 @@
+.body-container-wrapper {
+    overflow: hidden;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: var(--container-width);
+}
+
+@media screen and (min-width: 1380px) {
+    .content-wrapper {
+        padding: 0;
+    }
+}
+
+.dnd-section > .row-fluid {
+    margin: 0 auto;
+}
+
+.dnd-section .dnd-column {
+    padding: 0 calc(var(--container-padding) / 2);
+}
+
+.content-wrapper {
+    max-width: var(--container-width);
+}
+
+.dnd-section > .row-fluid {
+    /* max-width: var(--container-width); */
+    margin: 0 auto;
+}
+body .dnd-section .dnd-column {
+    padding: 0;
+}
+
+html.lock {
+    height: 100vh;
+    overflow: hidden;
+}

@@ -1,0 +1,357 @@
+[
+    {
+     "children": [
+      {
+       "choices": [
+        [
+         "Blog",
+         "Blog"
+        ],
+        [
+         "Report",
+         "Report"
+        ],
+        [
+         "Webinar",
+         "Webinar"
+        ],
+        [
+         "Podcast",
+         "Podcast"
+        ],
+        [
+         "Event",
+         "Event"
+        ]
+       ],
+       "default": "Blog",
+       "display": "select",
+       "display_width": null,
+       "help_text": "The value is used to group posts into a blog listing",
+       "id": "8ddd510f-cc2f-397b-bd8e-f234230d469e",
+       "label": "Post type",
+       "locked": false,
+       "multiple": false,
+       "name": "post_type",
+       "preset": null,
+       "reordering_enabled": true,
+       "required": true,
+       "type": "choice"
+      },
+      {
+       "allow_new_line": false,
+       "default": "Description",
+       "display_width": null,
+       "id": "4e8ad57f-405c-b804-b9b9-c5ded9050bbb",
+       "label": "Description",
+       "locked": false,
+       "name": "description",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "Written by",
+       "display_width": null,
+       "id": "b56f9300-eb90-3eb3-7153-44897185ffa9",
+       "label": "Author",
+       "locked": false,
+       "name": "author",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "Published on",
+       "display_width": null,
+       "id": "547293e5-b940-ef03-ede9-9c932be150ef",
+       "label": "Published",
+       "locked": false,
+       "name": "published",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "Less than one min read",
+       "display_width": null,
+       "id": "beff7301-7e17-80a6-d70d-2d7122010a7b",
+       "label": "Read time if less than 1 min",
+       "locked": false,
+       "name": "read_time_if_less_than_1_min",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "min read",
+       "display_width": null,
+       "id": "641261d7-7408-48f8-1ce0-5e3608602b6b",
+       "label": "Read time if more than 1 minute",
+       "locked": false,
+       "name": "read_time_if_more_than_1_minute",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "children": [
+        {
+         "allow_new_line": false,
+         "default": "Copy link",
+         "display_width": null,
+         "id": "4afdfadd-3b71-f646-bffc-20eac2720f5a",
+         "label": "Copy text",
+         "locked": false,
+         "name": "copy_text",
+         "required": false,
+         "show_emoji_picker": false,
+         "type": "text",
+         "validation_regex": ""
+        },
+        {
+         "default": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/Icon-3.svg",
+          "alt": "Icon-3",
+          "loading": "lazy",
+          "width": 20,
+          "height": 20,
+          "max_width": 20,
+          "max_height": 20
+         },
+         "display_width": null,
+         "id": "daeb3b1c-d782-cbc8-837e-303ea51b9a93",
+         "label": "Copy image",
+         "locked": false,
+         "name": "copy_image",
+         "required": false,
+         "resizable": true,
+         "responsive": true,
+         "show_loading": false,
+         "type": "image"
+        },
+        {
+         "default": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/twitter.svg",
+          "alt": "twitter",
+          "loading": "lazy",
+          "width": 20,
+          "height": 18,
+          "max_width": 20,
+          "max_height": 18
+         },
+         "display_width": null,
+         "id": "6c2a6538-c697-a785-12bb-ee84014c50ee",
+         "label": "Twitter image",
+         "locked": false,
+         "name": "twitter_image",
+         "required": false,
+         "resizable": true,
+         "responsive": true,
+         "show_loading": false,
+         "type": "image"
+        },
+        {
+         "default": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/fb.svg",
+          "alt": "fb",
+          "loading": "lazy",
+          "width": 20,
+          "height": 20,
+          "max_width": 20,
+          "max_height": 20
+         },
+         "display_width": null,
+         "id": "462fffff-b0eb-7c3e-ee84-34fb63f5ff7d",
+         "label": "Facebook image",
+         "locked": false,
+         "name": "facebook_image",
+         "required": false,
+         "resizable": true,
+         "responsive": true,
+         "show_loading": false,
+         "type": "image"
+        },
+        {
+         "default": {
+          "size_type": "auto",
+          "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+          "alt": "in",
+          "loading": "lazy",
+          "width": 20,
+          "height": 20,
+          "max_width": 20,
+          "max_height": 20
+         },
+         "display_width": null,
+         "id": "fc32bfb4-c51c-364b-4042-18431b25f43c",
+         "label": "Linkedin image",
+         "locked": false,
+         "name": "linkedin_image",
+         "required": false,
+         "resizable": true,
+         "responsive": true,
+         "show_loading": false,
+         "type": "image"
+        }
+       ],
+       "default": {
+        "copy_text": "Copy link",
+        "copy_image": {
+         "size_type": "auto",
+         "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/Icon-3.svg",
+         "alt": "Icon-3",
+         "loading": "lazy",
+         "width": 20,
+         "height": 20,
+         "max_width": 20,
+         "max_height": 20
+        },
+        "twitter_image": {
+         "size_type": "auto",
+         "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/twitter.svg",
+         "alt": "twitter",
+         "loading": "lazy",
+         "width": 20,
+         "height": 18,
+         "max_width": 20,
+         "max_height": 18
+        },
+        "facebook_image": {
+         "size_type": "auto",
+         "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/fb.svg",
+         "alt": "fb",
+         "loading": "lazy",
+         "width": 20,
+         "height": 20,
+         "max_width": 20,
+         "max_height": 20
+        },
+        "linkedin_image": {
+         "size_type": "auto",
+         "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+         "alt": "in",
+         "loading": "lazy",
+         "width": 20,
+         "height": 20,
+         "max_width": 20,
+         "max_height": 20
+        }
+       },
+       "display_width": null,
+       "expanded": false,
+       "id": "03e153f1-ba55-5eb6-a6c2-48df58d0c4d4",
+       "label": "Socials",
+       "locked": false,
+       "name": "socials",
+       "required": false,
+       "tab": "CONTENT",
+       "type": "group"
+      }
+     ],
+     "default": {
+      "post_type": "Blog",
+      "description": "Description",
+      "author": "Written by",
+      "published": "Published on",
+      "read_time_if_less_than_1_min": "Less than one min read",
+      "read_time_if_more_than_1_minute": "min read",
+      "socials": {
+       "copy_text": "Copy link",
+       "copy_image": {
+        "size_type": "auto",
+        "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/Icon-3.svg",
+        "alt": "Icon-3",
+        "loading": "lazy",
+        "width": 20,
+        "height": 20,
+        "max_width": 20,
+        "max_height": 20
+       },
+       "twitter_image": {
+        "size_type": "auto",
+        "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/twitter.svg",
+        "alt": "twitter",
+        "loading": "lazy",
+        "width": 20,
+        "height": 18,
+        "max_width": 20,
+        "max_height": 18
+       },
+       "facebook_image": {
+        "size_type": "auto",
+        "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/fb.svg",
+        "alt": "fb",
+        "loading": "lazy",
+        "width": 20,
+        "height": 20,
+        "max_width": 20,
+        "max_height": 20
+       },
+       "linkedin_image": {
+        "size_type": "auto",
+        "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/in.svg",
+        "alt": "in",
+        "loading": "lazy",
+        "width": 20,
+        "height": 20,
+        "max_width": 20,
+        "max_height": 20
+       }
+      }
+     },
+     "display_width": null,
+     "expanded": false,
+     "id": "f9080c89-0c4e-8d6a-7102-e96d8d433752",
+     "label": "Content settings",
+     "locked": false,
+     "name": "content_settings",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    },
+    {
+     "children": [
+      {
+       "default": {
+        "color": "#005AFF",
+        "opacity": 100
+       },
+       "display_width": null,
+       "id": "095ccbd1-0fad-c6c3-c805-6dad019e9043",
+       "label": "Background color",
+       "locked": false,
+       "name": "background_color",
+       "required": false,
+       "type": "color"
+      }
+     ],
+     "default": {
+      "background_color": {
+       "color": "#005AFF",
+       "opacity": 100
+      }
+     },
+     "display_width": null,
+     "expanded": false,
+     "id": "895349f6-db1e-360c-f707-409950057d48",
+     "label": "Module settings",
+     "locked": false,
+     "name": "module_settings",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ]

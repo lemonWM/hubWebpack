@@ -1,0 +1,166 @@
+.footer-main {
+    background-color: var(--primary-3);
+    padding: 64px 0px 64px;
+    font-family: var(--header-font);
+
+    &__wrapper {
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+        }
+
+        .logo-wrapper {
+            max-width: 384px;
+            padding-right: 89px;
+
+            @media (max-width: 1100px) {
+                max-width: 60%;
+                padding-right: 0px;
+                padding-bottom: 32px;
+            }
+            @media (max-width: 992px) {
+                max-width: 100%;
+            }
+
+            .logo {
+                padding-bottom: 32px;
+
+                img {
+                    max-width: 142px !important;
+                }
+            }
+            .text {
+
+                * {
+                   color: var(--primary-1);
+                   font-size: 16px;
+                   line-height: 24px;
+                   font-weight: 400;
+                }
+            }
+        }
+
+        .details-wrapper {
+            
+
+            @media (max-width: 992px) {
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 32px;
+            }
+
+
+
+            .menu-wrapper {
+                /*min-width: 176px;*/
+
+                @media (min-width: 992px) {
+                    &:nth-of-type(1){
+                        padding-right: 125px;
+                    }
+                    &:nth-of-type(2){
+                        padding-right: 98px;
+                    }
+                    &:nth-of-type(3){
+                        padding-right: 68px;
+                    }
+                    &:nth-of-type(4){
+                        padding-right: 60px;
+                    }
+                }
+                @media (max-width: 1199px) {
+                    &:nth-of-type(1){
+                        padding-right: 70px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    &:nth-of-type(1){
+                        padding-right: 0px;
+                    }
+                }
+
+
+                @media (max-width: 1100px) {
+                    min-width: auto;
+                    padding-right: 30px;
+                }
+                @media (max-width: 992px) {
+                    padding-right: 0px;
+                }
+
+                @media (max-width: 768px) {
+                    width: calc(50% - 16px);
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+    
+                    li {
+    
+                        a {
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: var(--primary-1);
+                            margin-bottom: 12px;
+                            transition: all .2s;
+
+                            &:hover {
+                                color: var(--primary-2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-bar {
+
+    &__wrapper {
+        border-top: 1px solid rgba(227, 231, 231, 1);
+        padding-top: 32px;
+        padding-bottom: 48px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .text {
+
+            * {
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(139, 136, 163, 1);
+                font-weight: 700;
+            }
+        }
+        .socials {
+            gap: 24px;
+
+            @media (max-width: 768px) {
+                padding-top: 22px;
+            }
+
+            .social-item {
+
+                .img-regular {
+                    display: block;
+                }
+                .img-hover {
+                    display: none;
+                }
+
+                &:hover{
+
+                    .img-regular {
+                        display: none;
+                    }
+                    .img-hover {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

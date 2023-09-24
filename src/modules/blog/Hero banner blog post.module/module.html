@@ -1,0 +1,140 @@
+{% require_css %}
+  <style>
+    {% scope_css %}
+		.hero-banner-blog-post__wrapper {
+			background-color: rgba({{ module.module_settings.background_color.color|convert_rgb }},{{ module.module_settings.background_color.opacity/100 }});
+		}
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}
+
+
+<section class="hero-banner-blog-post" id="{{ name }}">
+	<div class="hero-banner-blog-post__wrapper d-flex flex-column">
+		<div class="container">
+			<div class="hero-banner-blog-post__wrapper--main d-flex flex-column">
+				<div class="top-section d-flex flex-column align-center">
+					<div class="description">
+						<h3>{{ module.content_settings.description }}</h3>
+					</div>
+					<div class="title">
+						<h1>{{ content.name }}</h1>
+					</div>
+					<div class="meta">
+						<h2>{{ content.meta_description }}</h2>
+					</div>
+				</div>
+				<div class="details-section d-flex flex-row justify-between flex-wrap">
+
+					<div class="details-section--side d-flex flex-row flex-wrap">
+						<div class="author d-flex flex-column">
+							<span class="label">{{ module.content_settings.author }}</span>
+							<span class="details">{{ content.blog_post_author.display_name }}</span>
+						</div>
+						<div class="published d-flex flex-column">
+							<span class="label">{{ module.content_settings.published }}</span>
+							<span class="details">{{ content.publish_date|datetimeformat('%e %b %Y') }}</span>
+						</div>
+						<div class="post-info d-flex flex-row align-end">
+
+							<div class="post-info-main d-flex flex-row">
+								<div class="post-info--type">
+									<span>{{ module.content_settings.post_type }}</span>
+								</div>
+								<div class="post-info--read">
+									{% set initialPostWords = content.post_body|striptags|wordcount %}
+									{% set calculatedPostWords = (initialPostWords/100) * 100 %}
+									{% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+									{% set number = finishedPostWords|round %}
+									{% if number < 1 %} 
+										<span>{{ module.content_settings.read_time_if_less_than_1_min }}</span>
+									{% else %}
+										<span>{{ finishedPostWords|round }} {{ module.content_settings.read_time_if_more_than_1_minute }}</span>
+									{% endif %}
+								</div>
+
+							</div>
+
+							<div class="post-info--tags d-flex flex-row">
+								{% for tag in content.tag_list %}
+									<a href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+
+					<div class="details-section--side d-flex flex-row">
+						<div class="share-section social d-flex flex-row align-start">
+							<span class="social-button copy copy-clipboard d-flex flex-row " data-link="{{ content.absolute_url }}" >
+								{% if module.content_settings.socials.copy_image.src %}
+									{% set sizeAttrs = 'width="{{ module.content_settings.socials.copy_image.width }}" height="{{ module.content_settings.socials.copy_image.height }}"' %}
+									{% if module.content_settings.socials.copy_image.size_type == 'auto' %}
+										{% set sizeAttrs = 'width="{{ module.content_settings.socials.copy_image.width }}" height="{{ module.content_settings.socials.copy_image.height }}" style="max-width: 100%; height: auto;"' %}
+									{% elif module.content_settings.socials.copy_image.size_type == 'auto_custom_max' %}
+										{% set sizeAttrs = 'width="{{ module.content_settings.socials.copy_image.max_width }}" height="{{ module.content_settings.socials.copy_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+									{% endif %}
+									{% set loadingAttr = module.content_settings.socials.copy_image.loading != 'disabled' ? 'loading="{{ module.content_settings.socials.copy_image.loading }}"' : '' %}
+									<img src="{{ module.content_settings.socials.copy_image.src }}" alt="{{ module.content_settings.socials.copy_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+								{% endif %}
+								{{ module.content_settings.socials.copy_text }}
+								<span class="alert">Link copied!</span>
+							</span>
+
+							<a class="social-button social-button-platform twitter" target="_blank" href="https://twitter.com/intent/tweet?original_referer={{ content.absolute_url }}&amp;url={{ content.absolute_url }}&amp;text={{ page_meta.name }}">
+								{% if module.content_settings.socials.twitter_image.src %}
+									{% set sizeAttrs = 'width="{{ module.content_settings.socials.twitter_image.width }}" height="{{ module.content_settings.socials.twitter_image.height }}"' %}
+									{% if module.content_settings.socials.twitter_image.size_type == 'auto' %}
+										{% set sizeAttrs = 'width="{{ module.content_settings.socials.twitter_image.width }}" height="{{ module.content_settings.socials.twitter_image.height }}" style="max-width: 100%; height: auto;"' %}
+									{% elif module.content_settings.socials.twitter_image.size_type == 'auto_custom_max' %}
+										{% set sizeAttrs = 'width="{{ module.content_settings.socials.twitter_image.max_width }}" height="{{ module.content_settings.socials.twitter_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+									{% endif %}
+									{% set loadingAttr = module.content_settings.socials.twitter_image.loading != 'disabled' ? 'loading="{{ module.content_settings.socials.twitter_image.loading }}"' : '' %}
+									<img src="{{ module.content_settings.socials.twitter_image.src }}" alt="{{ module.content_settings.socials.twitter_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+								{% endif %}
+							</a>
+			
+							<a class="social-button social-button-platform facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url }}">
+								{% if module.content_settings.socials.facebook_image.src %}
+									{% set sizeAttrs = 'width="{{ module.content_settings.socials.facebook_image.width }}" height="{{ module.content_settings.socials.facebook_image.height }}"' %}
+									{% if module.content_settings.socials.facebook_image.size_type == 'auto' %}
+										{% set sizeAttrs = 'width="{{ module.content_settings.socials.facebook_image.width }}" height="{{ module.content_settings.socials.facebook_image.height }}" style="max-width: 100%; height: auto;"' %}
+									{% elif module.content_settings.socials.facebook_image.size_type == 'auto_custom_max' %}
+										{% set sizeAttrs = 'width="{{ module.content_settings.socials.facebook_image.max_width }}" height="{{ module.content_settings.socials.facebook_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+									{% endif %}
+									{% set loadingAttr = module.content_settings.socials.facebook_image.loading != 'disabled' ? 'loading="{{ module.content_settings.socials.facebook_image.loading }}"' : '' %}
+									<img src="{{ module.content_settings.socials.facebook_image.src }}" alt="{{ module.content_settings.socials.facebook_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+								{% endif %}
+							</a>
+			
+							<a class="social-button social-button-platform linkedin" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ content.absolute_url }}">
+								{% if module.content_settings.socials.linkedin_image.src %}
+									{% set sizeAttrs = 'width="{{ module.content_settings.socials.linkedin_image.width }}" height="{{ module.content_settings.socials.linkedin_image.height }}"' %}
+									{% if module.content_settings.socials.linkedin_image.size_type == 'auto' %}
+										{% set sizeAttrs = 'width="{{ module.content_settings.socials.linkedin_image.width }}" height="{{ module.content_settings.socials.linkedin_image.height }}" style="max-width: 100%; height: auto;"' %}
+									{% elif module.content_settings.socials.linkedin_image.size_type == 'auto_custom_max' %}
+										{% set sizeAttrs = 'width="{{ module.content_settings.socials.linkedin_image.max_width }}" height="{{ module.content_settings.socials.linkedin_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+									{% endif %}
+									{% set loadingAttr = module.content_settings.socials.linkedin_image.loading != 'disabled' ? 'loading="{{ module.content_settings.socials.linkedin_image.loading }}"' : '' %}
+									<img src="{{ module.content_settings.socials.linkedin_image.src }}" alt="{{ module.content_settings.socials.linkedin_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+								{% endif %}
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero-banner-blog-post__featured">
+		<div class="container">
+			<div class="img"
+				style="background-image:url({{ resize_image_url( content.featured_image, 0, 0, 1220) }})"></div>
+		</div>
+	</div>
+
+</section>
+
+
+{% require_js %}
+  <script>
+  </script>
+{% end_require_js %}

@@ -1,0 +1,38 @@
+<!--
+  templateType: email_subscriptions_confirmation_page
+  isAvailableForNewContent: true
+  label: Boilerplate - email subscriptions confirmation
+  screenshotPath: ../../images/template-previews/subscriptions-confirmation.png
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Confirm subscriptions" %}
+
+{% block body %}
+<section class=" systems-page confirmation">
+    
+    <div class="container">
+        <div class="main-wrapper">
+            <div class="image"></div>
+
+            <div class="inner-content ">
+                <div class="icon" style="margin-bottom: 20px;">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 10.5C7 11.6667 9.5 14 9.5 14L15 8.5" stroke="#005AFF" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="10.5" cy="10.5" r="9.5" stroke="#005AFF" stroke-width="2"/>
+                    </svg>    
+                </div>
+                <div class="content">
+                    {% module "subscriptions_confirmation"
+                        path="@hubspot/email_subscriptions_confirmation"
+                    %}
+                </div>
+                <span>
+					<a href='https://subsbase.com' target='_self' class='cta_button button button--type-2'>Homepage</a>
+				</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

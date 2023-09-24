@@ -1,0 +1,23 @@
+<!--
+  templateType: blog_post
+  isAvailableForNewContent: true
+  label: Blog Post
+  screenshotPath:
+-->
+
+
+{% extends './layouts/base.html' %}
+
+{% block body %}
+
+<div class="body-container blog-post">
+
+	{% module "hero_banner_blog_post" path="/SubsBase by 6Minded/modules/blog/Hero banner blog post",  %}
+  
+	<section class="post_main">
+		{{ content.post_body }}
+	</section>
+	
+</div>
+
+{% endblock body %}

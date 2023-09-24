@@ -1,0 +1,202 @@
+[
+    {
+        "children": [
+            {
+                "choices": [
+                    [
+                        "opt_1",
+                        "Latest from category "
+                    ],
+                    [
+                        "opt_2",
+                        "Latest from all post"
+                    ]
+                ],
+                "default": "opt_1",
+                "display": "select",
+                "display_width": null,
+                "id": "b319b8e9-9271-a887-5da9-9580af2fd990",
+                "label": "Main post",
+                "locked": false,
+                "multiple": false,
+                "name": "main_post",
+                "preset": null,
+                "reordering_enabled": true,
+                "required": false,
+                "type": "choice"
+            },
+            {
+                "choices": [
+                    [
+                        "Blog",
+                        "Blog"
+                    ],
+                    [
+                        "Report",
+                        "Report"
+                    ],
+                    [
+                        "Webinar",
+                        "Webinar"
+                    ],
+                    [
+                        "Podcast",
+                        "Podcast"
+                    ],
+                    [
+                        "Event",
+                        "Event"
+                    ]
+                ],
+                "default": "Report",
+                "display": "select",
+                "display_width": null,
+                "help_text": "",
+                "id": "8ddd510f-cc2f-397b-bd8e-f234230d469e",
+                "label": "Category main post type",
+                "locked": false,
+                "multiple": false,
+                "name": "main_post_type",
+                "preset": null,
+                "reordering_enabled": true,
+                "required": true,
+                "type": "choice",
+                "visibility": {
+                    "controlling_field_path": "content_settings.main_post",
+                    "controlling_value_regex": "opt_1",
+                    "operator": "EQUAL"
+                }
+            },
+            {
+                "type": "text",
+                "id": "5cac7c48-085a-bb5d-1cea-4e8d72efe775",
+                "validation_regex": "",
+                "label": "Sidebar title",
+                "name": "sidebar_title",
+                "default": "Hot off the press"
+            },
+            {
+                "choices": [
+                    [
+                        "Blog",
+                        "Blog"
+                    ],
+                    [
+                        "Report",
+                        "Report"
+                    ],
+                    [
+                        "Webinar",
+                        "Webinar"
+                    ],
+                    [
+                        "Podcast",
+                        "Podcast"
+                    ],
+                    [
+                        "Event",
+                        "Event"
+                    ]
+                ],
+                "default": "Blog",
+                "display": "select",
+                "display_width": null,
+                "help_text": "",
+                "label": "Sidebar main post type",
+                "locked": false,
+                "multiple": false,
+                "name": "sidebar_main_post_type",
+                "preset": null,
+                "reordering_enabled": true,
+                "required": true,
+                "type": "choice",
+                "visibility": {
+                    "controlling_field_path": "content_settings.main_post",
+                    "controlling_value_regex": "opt_1",
+                    "operator": "EQUAL"
+                },
+                "oldId": "8ddd510f-cc2f-397b-bd8e-f234230d469e",
+                "id": "32648145-c92b-ec86-a545-5316ebbc5f45"
+            },
+            {
+                "default": {
+                    "size_type": "auto",
+                    "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/Icon%20wrap.svg",
+                    "alt": "Icon wrap",
+                    "loading": "lazy",
+                    "width": 24,
+                    "height": 28,
+                    "max_width": 24,
+                    "max_height": 28
+                },
+                "display_width": null,
+                "id": "88072eaf-8d08-62fc-c6c4-a3c720ebc7f2",
+                "label": "Arrow icon",
+                "locked": false,
+                "name": "arrow_icon",
+                "required": false,
+                "resizable": true,
+                "responsive": true,
+                "show_loading": false,
+                "type": "image"
+            }
+        ],
+        "default": {
+            "main_post": "opt_1",
+            "main_post_type": "Report",
+            "sidebar_title": "Hot off the press",
+            "sidebar_main_post_type": "Blog",
+            "arrow_icon": {
+                "size_type": "auto",
+                "src": "https://26895932.fs1.hubspotusercontent-eu1.net/hubfs/26895932/Theme/Icons/Icon%20wrap.svg",
+                "alt": "Icon wrap",
+                "loading": "lazy",
+                "width": 24,
+                "height": 28,
+                "max_width": 24,
+                "max_height": 28
+            }
+        },
+        "display_width": null,
+        "expanded": false,
+        "id": "f9080c89-0c4e-8d6a-7102-e96d8d433752",
+        "label": "Content settings",
+        "locked": false,
+        "name": "content_settings",
+        "required": false,
+        "tab": "CONTENT",
+        "type": "group"
+    },
+    {
+        "children": [
+            {
+                "default": {
+                    "color": "#005AFF",
+                    "opacity": 100
+                },
+                "display_width": null,
+                "id": "095ccbd1-0fad-c6c3-c805-6dad019e9043",
+                "label": "Background color",
+                "locked": false,
+                "name": "background_color",
+                "required": false,
+                "type": "color"
+            }
+        ],
+        "default": {
+            "background_color": {
+                "color": "#005AFF",
+                "opacity": 100
+            }
+        },
+        "display_width": null,
+        "expanded": false,
+        "id": "895349f6-db1e-360c-f707-409950057d48",
+        "label": "Module settings",
+        "locked": false,
+        "name": "module_settings",
+        "required": false,
+        "tab": "CONTENT",
+        "type": "group"
+    }
+]

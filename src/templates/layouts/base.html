@@ -1,0 +1,61 @@
+<!--
+  templateType: none
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+    <head>
+        <meta charset="utf-8">
+
+        {% if page_meta.html_title || pageTitle %}<title>{{ page_meta.html_title || pageTitle }}</title>{% endif %}
+        {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+        <meta name="description" content="{{ page_meta.meta_description }}">
+        <!-- fonts global-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <!-- font project -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap" rel="stylesheet">
+    
+        <!-- styles -->
+        {{ require_css(get_asset_url("../../css/variabels.css")) }}
+        {{ require_css(get_asset_url("../../css/styles.css")) }}
+        {# This is intended to be used if a template requires template specific style sheets #}
+      
+        {# Jquery #}
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.js" integrity="sha512-AmJ0T6lpw/ZQtCleMyfbraDy8AGQ9tWaB/PmRkXdKxH9Kvo0oTuW6+2hTEQ89mHkFIO/LpColEe3+QE+FJtgIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        {% if template_css %}
+            {{ require_css(get_asset_url(template_css)) }}
+        {% endif %}
+
+        {{ standard_header_includes }}
+
+        <!-- reload page -->
+        <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+    </head>
+
+    <body>
+        <div class="body-wrapper {{ builtin_body_classes }} {{ widget_data.type_of_header.value | lower }}">
+            {% block header %}
+                {% global_partial path="../partials/header.html" %}
+            {% endblock header %}
+
+            <main id="main-content" class="body-container-wrapper">
+                {% block body %}{% endblock body %}
+            </main>
+
+            {% block footer %}
+                {% global_partial path="../partials/footer.html" %}
+            {% endblock footer %}
+        </div>
+
+    {{ standard_footer_includes }}
+    
+    {# VENDORS #}
+    {{ require_js(get_asset_url("../../js/main.js")) }}
+    </body>
+</html>

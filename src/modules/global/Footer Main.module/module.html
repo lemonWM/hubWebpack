@@ -1,0 +1,114 @@
+{% require_css %}
+  <style>
+    {% scope_css %}
+
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}
+
+
+<div class="footer-main" style="padding-top: 100vh;">
+    <div class="container container-lg">
+        <div class="footer-main__wrapper d-flex flex-row justify-between">
+            <div class="logo-wrapper d-flex flex-column">
+                <div class="logo">
+                    {% set loadingAttr = module.content_settings.main_section.logo_field.loading != 'disabled' ? '{{ module.content_settings.main_section.logo_field.loading }}' : '' %}
+
+                    {% logo
+                        override_inherited_src="{{ module.content_settings.main_section.logo_field.override_inherited_src }}"
+                        src="{{ module.content_settings.main_section.logo_field.src }}"
+                        alt="{{ module.content_settings.main_section.logo_field.alt }}"
+                        width="{{ module.content_settings.main_section.logo_field.width }}"
+                        height="{{ module.content_settings.main_section.logo_field.height }}"
+                        loading="{{ loadingAttr }}"
+                        suppress_company_name="{{ module.content_settings.main_section.logo_field.suppress_company_name }}"
+                    %}
+                </div>
+                <div class="text">
+                    {% inline_rich_text field="content_settings.main_section.richtext_field" value="{{ module.content_settings.main_section.richtext_field }}" %}
+                </div>
+            </div>
+            <div class="details-wrapper d-flex flex-row">
+
+                <div class=" menu-wrapper">
+                    <div class="menu menu--1">
+                        {% simple_menu menu_tree="{{ module.content_settings.main_section.menu_1 }}" %}
+                    </div>
+                </div>
+
+                <div class=" menu-wrapper">
+                    <div class="menu menu--2">
+                        {% simple_menu menu_tree="{{ module.content_settings.main_section.menu_2 }}" %}
+                    </div>
+                </div>
+
+                <div class=" menu-wrapper">
+                    <div class="menu menu--3">
+                        {% simple_menu menu_tree="{{ module.content_settings.main_section.menu_3 }}" %}
+                    </div>
+                </div>
+
+                <div class=" menu-wrapper">
+                    <div class="menu menu--4">
+                        {% simple_menu menu_tree="{{ module.content_settings.main_section.menu_4 }}" %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer-bar">
+    <div class="container">
+        <div class="footer-bar__wrapper d-flex flex-row justify-between">
+            <div class="text">
+                {% inline_text field="content_settings.bar_section.text_field" value="{{ module.content_settings.bar_section.text_field }}" %}
+            </div>
+            <div class="socials d-flex flex-row">
+
+                {% for item in module.content_settings.bar_section.social_item %}
+
+                    <div class="social-item">
+                        {% set href = item.link_field.url.href %}
+                        {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                            {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                            {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                            {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+                            >
+                            {% if item.image_field.src %}
+                                {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                                {% if item.image_field.size_type == 'auto' %}
+                                    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                                {% elif item.image_field.size_type == 'auto_custom_max' %}
+                                    {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                                {% endif %}
+                                {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                                <img class="img-regular" src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+
+                            {% if item.image_hover.src %}
+                                {% set sizeAttrs = 'width="{{ item.image_hover.width }}" height="{{ item.image_hover.height }}"' %}
+                                {% if item.image_hover.size_type == 'auto' %}
+                                    {% set sizeAttrs = 'width="{{ item.image_hover.width }}" height="{{ item.image_hover.height }}" style="max-width: 100%; height: auto;"' %}
+                                {% elif item.image_hover.size_type == 'auto_custom_max' %}
+                                    {% set sizeAttrs = 'width="{{ item.image_hover.max_width }}" height="{{ item.image_hover.max_height }}" style="max-width: 100%; height: auto;"' %}
+                                {% endif %}
+                                {% set loadingAttr = item.image_hover.loading != 'disabled' ? 'loading="{{ item.image_hover.loading }}"' : '' %}
+                                <img class="img-hover" src="{{ item.image_hover.src }}" alt="{{ item.image_hover.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                        </a>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% require_js %}
+  <script>
+  </script>
+{% end_require_js %}

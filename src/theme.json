@@ -1,0 +1,23 @@
+{
+    "label": "Theme by 6M",
+    "author": {
+        "name": "6minded.com",
+        "email": "hello@6minded.com",
+        "url": "https://www.6minded.com/"
+    },
+    "documentation_url": "https://developers.hubspot.com/docs/cms/building-blocks/themes/hubspot-cms-boilerplate",
+    "example_url": "https://5592593.fs1.hubspotusercontent-na1.net/hubfs/5592593/Footer%202023/6Mlogo@2x.png",
+    "preview_path": "https://5592593.fs1.hubspotusercontent-na1.net/hubfs/5592593/Footer%202023/6Mlogo@2x.png",
+    "screenshot_path": "https://5592593.fs1.hubspotusercontent-na1.net/hubfs/5592593/Footer%202023/6Mlogo@2x.png",
+    "enable_domain_stylesheets": false,
+    "license": "./license.txt",
+    "responsive_breakpoints": [
+        {
+            "name": "mobile",
+            "mediaQuery": "@media (max-width: 767px)",
+            "previewWidth": {
+                "value": 477
+            }
+        }
+    ]
+}

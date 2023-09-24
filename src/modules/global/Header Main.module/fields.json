@@ -1,0 +1,59 @@
+[
+    {
+     "children": [
+      {
+       "default": {
+        "override_inherited_src": false,
+        "src": null,
+        "alt": null
+       },
+       "display_width": null,
+       "id": "67aafd73-555d-5979-ff57-9e6b6eaadd98",
+       "label": "Logo",
+       "locked": false,
+       "name": "logo_field",
+       "required": false,
+       "show_loading": false,
+       "type": "logo"
+      },
+      {
+       "default": 80228233442,
+       "display_width": null,
+       "id": "cf47cd75-9b7e-73de-14c8-80bbc6ff1409",
+       "label": "Menu",
+       "locked": false,
+       "name": "menu_field",
+       "required": false,
+       "type": "menu"
+      },
+      {
+       "default": "266a47f3-0804-441e-a0ee-2f8f749d85f9",
+       "display_width": null,
+       "id": "a6fab767-f49a-7600-9f0a-a47dd75c0b2f",
+       "label": "CTA",
+       "locked": false,
+       "name": "cta_field",
+       "required": false,
+       "type": "cta"
+      }
+     ],
+     "default": {
+      "logo_field": {
+       "override_inherited_src": false,
+       "src": null,
+       "alt": null
+      },
+      "menu_field": 80228233442,
+      "cta_field": "266a47f3-0804-441e-a0ee-2f8f749d85f9"
+     },
+     "display_width": null,
+     "expanded": false,
+     "id": "14a75eef-5bed-f0c7-97a5-71e0f580c5f7",
+     "label": "Content settings",
+     "locked": false,
+     "name": "content_settings",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ]

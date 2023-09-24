@@ -1,0 +1,227 @@
+{% require_css %}
+  <style>
+    {% scope_css %}
+		.hero-banner-blog-lisiting {
+			background-color: rgba({{ module.module_settings.background_color.color|convert_rgb }},{{ module.module_settings.background_color.opacity/100 }});
+		}
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}
+
+
+<section class="hero-banner-blog-lisiting" id="{{ name }}">
+	<div class="container">
+		<div class="hero-banner-blog-lisiting__wrapper d-flex flex-row justify-between">
+			<div class="hero-banner-blog-lisiting__wrapper--main">
+
+				{% if module.content_settings.main_post is equalto 'opt_1' %}
+
+					{% set i = 0 %}
+
+					{% for content in contents %}
+
+						{% if content.widgets.hero_banner_blog_post.body.content_settings.post_type == module.content_settings.main_post_type %}
+
+							{% if i < 1 %}
+
+								<div class="article-main article-main-category d-flex flex-column">
+									<div class="article-main--img"
+										style="background-image: url({{ resize_image_url(content.featured_image, 0, 0, 800) }});"></div>
+
+									<div class="main d-flex-flex-column">
+										<div class="article-main--author">
+											<span>{{ content.blog_post_author.display_name }} &#8226 {{ content.publish_date|datetimeformat('%e %b %Y') }}</span>
+										</div>
+										<div class="article-main--title">
+											<h1>
+												<a href="{{content.absolute_url}}" class="d-flex flex-row justify-between">
+													{{ content.name }}
+													<span>
+														{% if module.content_settings.arrow_icon.src %}
+															{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.width }}" height="{{ module.content_settings.arrow_icon.height }}"' %}
+															{% if module.content_settings.arrow_icon.size_type == 'auto' %}
+																{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.width }}" height="{{ module.content_settings.arrow_icon.height }}" style="max-width: 100%; height: auto;"' %}
+															{% elif module.content_settings.arrow_icon.size_type == 'auto_custom_max' %}
+																{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.max_width }}" height="{{ module.content_settings.arrow_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+															{% endif %}
+															{% set loadingAttr = module.content_settings.arrow_icon.loading != 'disabled' ? 'loading="{{ module.content_settings.arrow_icon.loading }}"' : '' %}
+															<img src="{{ module.content_settings.arrow_icon.src }}" alt="{{ module.content_settings.arrow_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+														{% endif %}
+													</span>
+												</a>
+											</h1>
+										</div>
+										<div class="article-main--meta">
+											<h2>
+												{{ content.meta_description|truncate(148 ,'...') }}
+											</h2>
+										</div>
+										<div class="article-main--details d-flex flex-row">
+											<div class="datails-time">
+												<span class="type">{{ content.widgets.hero_banner_blog_post.body.content_settings.post_type }}</span>
+	
+												{% set initialPostWords = content.post_body|striptags|wordcount %}
+												{% set calculatedPostWords = (initialPostWords/100) * 100 %}
+												{% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+												{% set number = finishedPostWords|round %}
+												{% if number < 1 %} 
+													<span class="time">Less than 1 minute</span>
+												{% else %}
+													<span class="time">{{ finishedPostWords|round }} min read</span>
+												{% endif %}
+											</div>
+											<div class="datails-topics d-flex flex-row">
+												{% for tag in content.tag_list %}
+													<a href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>
+												{% endfor %}
+											</div>
+										</div>
+									</div>
+								</div>
+
+								{% set i = i + 1 %}
+
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+
+				{% else %}
+
+					{% for content in contents %}
+						{% if loop.first %}
+							<div class="article-main article-main-category d-flex flex-column">
+								<div class="article-main--img"
+									style="background-image: url({{ resize_image_url(content.featured_image, 0, 0, 800) }});"></div>
+
+								<div class="main d-flex-flex-column">
+									<div class="article-main--author">
+										<span>{{ content.blog_post_author.display_name }} &#8226 {{ content.publish_date|datetimeformat('%e %b %Y') }}</span>
+									</div>
+									<div class="article-main--title">
+										<h1>
+											<a href="{{content.absolute_url}}" class="d-flex flex-row justify-between">
+												{{ content.name }}
+												<span>
+													{% if module.content_settings.arrow_icon.src %}
+														{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.width }}" height="{{ module.content_settings.arrow_icon.height }}"' %}
+														{% if module.content_settings.arrow_icon.size_type == 'auto' %}
+															{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.width }}" height="{{ module.content_settings.arrow_icon.height }}" style="max-width: 100%; height: auto;"' %}
+														{% elif module.content_settings.arrow_icon.size_type == 'auto_custom_max' %}
+															{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.max_width }}" height="{{ module.content_settings.arrow_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+														{% endif %}
+														{% set loadingAttr = module.content_settings.arrow_icon.loading != 'disabled' ? 'loading="{{ module.content_settings.arrow_icon.loading }}"' : '' %}
+														<img src="{{ module.content_settings.arrow_icon.src }}" alt="{{ module.content_settings.arrow_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+													{% endif %}
+												</span>
+											</a>
+										</h1>
+									</div>
+									<div class="article-main--meta">
+										<h2>
+											{{ content.meta_description|truncate(148 ,'...') }}
+										</h2>
+									</div>
+									<div class="article-main--details d-flex flex-row">
+										<div class="datails-time">
+											<span class="type">{{ content.widgets.hero_banner_blog_post.body.content_settings.post_type }}</span>
+
+											{% set initialPostWords = content.post_body|striptags|wordcount %}
+											{% set calculatedPostWords = (initialPostWords/100) * 100 %}
+											{% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+											{% set number = finishedPostWords|round %}
+											{% if number < 1 %} 
+												<span class="time">Less than 1 minute</span>
+											{% else %}
+												<span class="time">{{ finishedPostWords|round }} min read</span>
+											{% endif %}
+										</div>
+										<div class="datails-topics d-flex flex-row">
+											{% for tag in content.tag_list %}
+												<a href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>
+											{% endfor %}
+										</div>
+									</div>
+								</div>
+							</div>
+						{% endif %}
+					{% endfor %}
+					
+				{% endif %}
+
+			</div>
+			<div class="hero-banner-blog-lisiting__wrapper--sidebar">
+				<div class="sidebar-posts d-flex flex-column">
+					<div class="sidebar-posts--title">
+						<h3>{{ module.content_settings.sidebar_title }}</h3>
+					</div>
+					<div class="sidebar-posts--articles d-flex flex-column">
+						{% set l = 0 %}
+
+						{% for content in contents %}
+	
+							{% if content.widgets.hero_banner_blog_post.body.content_settings.post_type == module.content_settings.sidebar_main_post_type %}
+	
+								{% if l < 3 %}
+
+									<div class="article d-flex flex-column">
+										<div class="article--author">
+											<span>{{ content.blog_post_author.display_name }} &#8226 {{ content.publish_date|datetimeformat('%e %b %Y') }}</span>
+										</div>
+										<div class="article--title">
+											<h4>
+												<a href="{{content.absolute_url}}" class="d-flex flex-row justify-between">
+													{{ content.name }}
+													<span>
+														{% if module.content_settings.arrow_icon.src %}
+															{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.width }}" height="{{ module.content_settings.arrow_icon.height }}"' %}
+															{% if module.content_settings.arrow_icon.size_type == 'auto' %}
+																{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.width }}" height="{{ module.content_settings.arrow_icon.height }}" style="max-width: 100%; height: auto;"' %}
+															{% elif module.content_settings.arrow_icon.size_type == 'auto_custom_max' %}
+																{% set sizeAttrs = 'width="{{ module.content_settings.arrow_icon.max_width }}" height="{{ module.content_settings.arrow_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+															{% endif %}
+															{% set loadingAttr = module.content_settings.arrow_icon.loading != 'disabled' ? 'loading="{{ module.content_settings.arrow_icon.loading }}"' : '' %}
+															<img src="{{ module.content_settings.arrow_icon.src }}" alt="{{ module.content_settings.arrow_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+														{% endif %}
+													</span>
+												</a>
+											</h4>
+										</div>
+										<div class="article--details d-flex flex-row">
+											<div class="datails-time">
+												<span class="type">{{ content.widgets.hero_banner_blog_post.body.content_settings.post_type }}</span>
+	
+												{% set initialPostWords = content.post_body|striptags|wordcount %}
+												{% set calculatedPostWords = (initialPostWords/100) * 100 %}
+												{% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+												{% set number = finishedPostWords|round %}
+												{% if number < 1 %} 
+													<span class="time">Less than 1 minute</span>
+												{% else %}
+													<span class="time">{{ finishedPostWords|round }} min read</span>
+												{% endif %}
+											</div>
+											<div class="datails-topics d-flex flex-row">
+												{% for tag in content.tag_list %}
+													<a href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>
+												{% endfor %}
+											</div>
+										</div>
+									</div>
+	
+									{% set l = l + 1 %}
+	
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+{% require_js %}
+  <script>
+  </script>
+{% end_require_js %}

@@ -1,0 +1,63 @@
+.body-wrapper button,
+.body-wrapper a.button,
+.body-wrapper .button {
+    box-sizing: border-box !important;
+    cursor: pointer;
+    display: inline-block;
+    white-space: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--body-font);
+    color: #000;
+    padding: 12px 56px;
+    transition: all .3s;
+
+    &:disabled {
+        opacity: 0.5 !important;
+        pointer-events: none !important;
+    }
+
+    &--type-1 {
+        background: #7ACD17;
+        border: 1px solid #7ACD17;
+        transition: all .3s;
+        
+        &:hover {
+            color: #fff;
+        }
+    }
+    &--type-2 {
+        background: transparent;
+        border: 1px solid #000;
+        transition: all .3s;
+        
+        &:hover {
+            color: #7ACD17;
+            border: 1px solid #7ACD17;
+        }
+    }
+}
+
+/* No button */
+
+.no-button,
+.no-button:hover,
+.no-button:focus,
+.no-button:active {
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: initial;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    transition: none;
+}

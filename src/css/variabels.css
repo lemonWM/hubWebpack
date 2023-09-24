@@ -1,0 +1,87 @@
+{% import './tools/_macros.css' %}
+  :root {
+    --primary-1: #0000;
+    --primary-2: #313131;
+    --primary-3: #FFFFFF;
+    --primary-4: #7ACD17;
+    --primary-5: #EBF4E0;
+    --primary-5: #B1B1B1;
+
+    --mobile-breakpoint: 992px;
+    --container-width: 1496px;
+    --container-padding: 20px;
+    --dnd-gap: 40px;
+    --dnd-mt: 120px;
+    --dnd-mb: 120px;
+
+
+    --header-height: 100px;
+    --header-mobile-height:  55px;
+    --header-bg-color: #fff;
+
+    --nav-font-color: #0000;
+
+
+    --body-font: 'Poppins';
+    --header-font: 'Poppins';
+
+    --body-font-size: 18px;
+    --body-font-color: #000;
+    --body-font-line-height: 27px;
+    --body-font-weight: 400;
+    --text-elements-margin: 0px 0px 10px 0px;
+
+    --link-color: #7ACD17;
+    --link-color-hover: #0000;
+
+ 
+    --header-font-color: #0000;
+
+    --form-font: var(--body-font);
+    --form-font-size: 16px;
+    --form-font-color: #0000;
+
+    --form-border:  1px solid #707070;
+    --form-border-radius: 0px;
+    --form-padding: 0px;
+    --form-filed-margin: 0px;
+
+    --form-label-size: 16px;
+    --form-label-color: rgba(0,0,0,.9);
+
+
+    --form-legend-size: 16px;
+    --form-legend-color: #000000;
+
+
+    --form-placeholder-size: 16px;
+    --form-placeholder-color: #c3c3c3;
+
+    --form-error-size: 16px;
+    --form-error-color: #7ACD17;
+  }
+/*
+  @font-face {
+    font-family: "Quasimoda";
+    src: url('https://26808537.fs1.hubspotusercontent-eu1.net/hubfs/26808537/Fonts/Quasimoda%20Extra%20Bold/Quasimoda-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Quasimoda";
+    src: url('https://26808537.fs1.hubspotusercontent-eu1.net/hubfs/26808537/Fonts/Quasimoda%20Bold/Quasimoda-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Quasimoda";
+    src: url('https://26808537.fs1.hubspotusercontent-eu1.net/hubfs/26808537/Fonts/Quasimoda%20Regular/Quasimoda-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+*/

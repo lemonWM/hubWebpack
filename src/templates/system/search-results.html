@@ -1,0 +1,51 @@
+<!--
+  templateType: search_results_page
+  isAvailableForNewContent: true
+  label: Search results
+  screenshotPath: ../../images/template-previews/search-results.png
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Search results" %}
+
+{% block body %}
+<section class="search-results search-results-system-page">
+
+    <div class="search-results__wrapper">
+
+        <div class="search-results__wrapper--header ">
+
+            <div class="container d-flex flex-row justify-between align-center">
+
+                <div class="title">
+                    {% module_block module "search_results_content"
+                        label="Search results heading",
+                        path="@hubspot/rich_text"
+                    %}
+                        {% module_attribute "html" %}
+                        <h1>Results for "{{ request.query_dict.term|escape }}"</h1>
+                        {% end_module_attribute %}
+                    {% end_module_block %}
+                </div>
+
+                <div class="counter">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-results__wrapper--results">
+
+            <div class="container container-sm">
+                {% module "search_results"
+                    path="@hubspot/search_results"
+                %}
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+{% endblock body %}
